@@ -1,0 +1,61 @@
+/* Variable de couleur de base */
+:root {
+    --primary-color: rgba(34, 45, 90, 1);
+}
+
+/* Réinitialisation de base et styles globaux */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+    background-color: rgba(245, 245, 245, 1); /* Couleur d'arrière-plan neutre pour contraster avec la couleur primaire */
+}
+
+/* Styles du conteneur principal */
+.container {
+    height: 100%;
+    padding: 0 20px; /* Espacement latéral pour éviter que le contenu ne touche les bords sur de petits écrans */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée légère pour améliorer la lisibilité */
+}
+
+/* Styles adaptatifs pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+    .container {
+        font-size: 1.5rem;
+    }
+}
+
+/* Styles adaptatifs pour les petits écrans */
+@media (max-width: 480px) {
+    .container {
+        font-size: 1.2rem;
+    }
+}
+a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    background-color: rgba(24, 35, 100, 1);  /* Une nuance plus foncée pour l'effet de survol */
+    transform: translateY(-2px);  /* Un léger décalage vers le haut pour un effet "déclenché" */
+}
+
+a:active {
+    transform: translateY(0);  /* Reset le décalage lorsqu'on clique sur le bouton */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);  /* Ombre portée plus petite pour un effet enfoncé */
+}

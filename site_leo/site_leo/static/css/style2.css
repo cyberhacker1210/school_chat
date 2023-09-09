@@ -1,0 +1,46 @@
+table {
+            width: 100%;
+            border-collapse: collapse; /* Pour éviter le double bord */
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Bordure pour chaque cellule */
+            padding: 8px 12px; /* Espacement dans les cellules */
+            text-align: left; /* Alignement du texte à gauche */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Couleur d'arrière-plan pour les en-têtes */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f9f9f9; /* Couleur d'arrière-plan pour les lignes impaires */
+        }
+
+        tr:hover {
+            background-color: #e6e6e6; /* Couleur d'arrière-plan lors du survol d'une ligne */
+        }
+
+a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    background-color: rgba(24, 35, 80, 1);  /* Une nuance plus foncée pour l'effet de survol */
+    transform: translateY(-2px);  /* Un léger décalage vers le haut pour un effet "déclenché" */
+}
+
+a:active {
+    transform: translateY(0);  /* Reset le décalage lorsqu'on clique sur le bouton */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);  /* Ombre portée plus petite pour un effet enfoncé */
+}

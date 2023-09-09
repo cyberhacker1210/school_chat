@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le planing 5°th</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+<body>
+    <h1>Voici le planing des 5°th</h1>
+
+    <table border="1">
+        <!-- En-têtes du tableau -->
+        <thead>
+            <tr>
+                <th>Jour</th>
+                <th>Heure</th>
+                <th>Matière</th>
+            </tr>
+        </thead>
+
+        <!-- Corps du tableau -->
+        <tbody>
+            {% for planning in plannings %}
+            <tr>
+                <td>{{ planning.jour }}</td>
+                <td>{{ planning.heure }}</td>
+                <td>{{ planning.matiere }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="http://127.0.0.1:8000/">Retourner au menu principal</a>
+</body>
+</html>
