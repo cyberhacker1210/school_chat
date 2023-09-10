@@ -13,9 +13,10 @@
         <!-- En-têtes du tableau -->
         <thead>
             <tr>
-                <th>Jour</th>
-                <th>Heure</th>
-                <th>Matière</th>
+                <th>heure</th>
+                {% for jour in jour_distinctes %}
+                    <th>{{ jour.jour }}</th>
+                {% endfor %}
             </tr>
         </thead>
 
@@ -23,7 +24,6 @@
         <tbody>
             {% for planning in plannings %}
             <tr>
-                <td>{{ planning.jour }}</td>
                 <td>{{ planning.heure }}</td>
                 <td>{{ planning.matiere }}</td>
             </tr>
