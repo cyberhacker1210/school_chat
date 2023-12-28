@@ -3,16 +3,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mon site web</title>
+    <title>school chat</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="container">
-        <h1>Bonjour, bienvenue sur mon site</h1>
+        <h1>Bonjour, bienvenue sur school chat</h1>
         <h2>Aujourd'hui nous sommes le {{ date|date:"d F Y "}}</h2>
         <h3>Il est actuellement {{ date|date:"H\hi" }}</h3>
         <a href = http://127.0.0.1:8000/blog/ >voir le planning groupe 2</a>
-        <a href = http://127.0.0.1:8000/blog/G1 >voir le planning du groupe 1</a>
+        <a href = http://127.0.0.1:8000/blog/G1/ >voir le planning du groupe 1</a>
+        <a href = http://127.0.0.1:8000/chat/ >accéder au chat</a>
     </div>
 </body>
 </html>

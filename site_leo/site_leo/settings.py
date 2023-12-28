@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'blog',
     'channels',
     'chat',
-    'log_in',
 ]
 
 MIDDLEWARE = [

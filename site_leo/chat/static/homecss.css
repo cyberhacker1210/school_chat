@@ -60,3 +60,22 @@
                 input[type=submit]:hover {
                 background-color: #45a049;
                 }
+
+               a{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #3498db; /* Couleur de la bordure */
+  color: #3498db; /* Couleur du texte */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Transition de la couleur de fond */
+}
+
+/* Changement de couleur de fond au survol du bouton */
+a:hover {
+  background-color: #3498db; /* Nouvelle couleur de fond au survol */
+  color: #fff; /* Nouvelle couleur du texte au survol */
+}
